@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    text-align: center;
+}
+
+input, button, select {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Add this to styles.css */
+li a {
+    text-decoration: none;
+    color: #333;
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.trash {
+    cursor: pointer;
+    /* color: red; */
+}
