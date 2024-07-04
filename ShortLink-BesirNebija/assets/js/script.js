@@ -26,7 +26,9 @@ function addLinkToList(longLink, shortLink) {
         <span class="trash"> <i class="fa-solid fa-trash "></i></span>`;
 
     li.querySelector('.trash').addEventListener('click', function () {
-        ul.removeChild(li);
+        if (confirm("Are you sure you want to delete this Link?") == true) {
+            ul.removeChild(li)
+        }
         removeFromLocalStorage(longLink);
     });
     ul.appendChild(li);
